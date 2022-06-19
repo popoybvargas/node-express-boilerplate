@@ -1,0 +1,24 @@
+{
+  "name": "express-boilerplate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js"
+  },
+  "keywords": [],
+  "author": "Popoy Vargas",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "express-rate-limit": "^6.4.0",
+    "express-slow-down": "^1.4.0",
+    "helmet": "^5.1.0",
+    "zv-dotenv": "^1.0.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  }
+}
