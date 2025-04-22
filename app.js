@@ -9,6 +9,7 @@ const rateLimit = require('express-rate-limit');
 const slowDown = require('express-slow-down');
 
 const router = require('./router');
+const { version } = require('./package.json');
 
 const app = express();
 const LIMITER = { windowMs: 30 * 1000, max: 20 };	// max of 20 requests within 30 secs from the same IP;
@@ -23,7 +24,9 @@ app.use(speedLimiter);
 
 app.use((req, _, next) =>
 {
-	req._id = randomUUID();
+	const reqId = randomUUID();
+	req._id = reqId;
+	console.log(`------------ START OF (${reqId}) REQUEST (app version: ${version}) ------------`);
 
 	next();
 });

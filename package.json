@@ -4,17 +4,17 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "npx nodemon index.js"
+    "dev": "npx nodemon server.js"
   },
   "keywords": [],
   "author": "Popoy Vargas",
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",
-    "express": "^4.19.2",
-    "express-rate-limit": "^7.3.1",
+    "express": "^5.1.0",
+    "express-rate-limit": "^7.5.0",
     "express-slow-down": "^2.0.3",
-    "helmet": "^7.1.0",
+    "helmet": "^8.1.0",
     "zv-dotenv": "^1.0.3"
   }
 }
